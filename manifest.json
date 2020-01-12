@@ -1,0 +1,22 @@
+{
+  "name": "xdParser v.1.0",
+  "version": "1.0",
+  "description": "Parser sites",
+  "permissions": [
+        "webview",
+        "notifications", "alwaysOnTopWindows",
+		"storage",
+		"https://xdan.ru/*",
+
+        "*://prime.date/*",
+        "*://*.prime.date/*",
+        "*://*.cloudfront.net/*",
+        "*://cloudfront.net/*"
+   ],
+  "app": {
+      "launch": {
+         "local_path": "main.html"
+      }
+   },
+   "manifest_version": 2
+}

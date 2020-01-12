@@ -1,0 +1,55 @@
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+<title>xdParser v1.1</title>
+<link href="css/main.css" rel="stylesheet"/>
+<script type="text/javascript" src="/js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="/js/main.js"></script>
+</head>
+<body>
+  <img id="progress" src="/css/images/progress.gif"/>
+<!--
+  <input id="text_set" type="button" value="Записать"/>
+  <input id="text_get" type="button" value="Прочесть"/>
+  <div id="resultbox">
+  -->
+  </div>
+
+
+  <div class="container">
+    <form id="login_form">
+      <input type="text" placeholder="netperevodchica@mail.ru" id="mail_input">
+      <input type="text" placeholder="qwerty123456" id="pass_input">
+      <div class="login_button" id="login">Login Prime</div>
+    </form>
+
+
+    <div class="tabs">
+      <div class="tab"></div>
+      <div class="tab"></div>
+    </div>
+    <div class="content" id="content">
+      <div class="females" id="females"></div>
+      <div class="invite">
+        Invite (single):<br />
+        <textarea name="invite" id="invite" cols="30" rows="5"></textarea>
+        <div class="settings" id="invite_settings">
+          <div>ageFrom: <input type="number" id="ageFrom"></div>
+          <div>ageTo: <input type="number" id="ageTo"></div>
+          <div>withPhoto: <input type="checkbox" id="withPhoto"></div>
+
+          <input type="button" value="Start" id="chat_start">
+          <input type="button" value="Pause" id="chat_pause">
+          <input type="button" value="Stop" id="chat_stop">
+          <div class="chat_progress" id="chat_progress"></div>
+        </div>
+      </div>
+      <div id="test_send_message">test_send_message</div>
+      <div id="test_send_mail">test_send_mail</div>
+    </div>
+  </div>
+
+
+  <webview src="https://prime.date/" id="frame" width="640" height="480"></webview>
+</body>
+</html>

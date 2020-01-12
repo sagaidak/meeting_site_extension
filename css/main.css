@@ -1,0 +1,11 @@
+.container {
+    margin: 0 50px;
+}
+
+.tabs {
+    display: flex;
+    align-content: left;
+}
+.tab {
+    margin-right: 50px;
+}
